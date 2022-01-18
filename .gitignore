@@ -1,0 +1,21 @@
+# /*
+# !/README.md
+# !/Dockerfile
+# !/ros_entrypoint.sh
+# !/turtlesim.launch
+# !/.gitignore
+# !/DockerUser/a
+# !/DockerUser/catkin_ws/src/*
+
+/DockerUser/catkin_ws/build
+/DockerUser/catkin_ws/devel
+
+/DockerUser/.bashrc
+/DockerUser/.bash_history
+/DockerUser/.ros/
+/DockerUser/.rviz/
+
+/DockerUser/.config/
+/DockerUser/.gazebo/
+/DockerUser/.ignition/
+/DockerUser/.sdformat/
