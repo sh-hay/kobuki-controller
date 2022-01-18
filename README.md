@@ -1,6 +1,6 @@
-# kobuki を操縦する
+# kobuki を Docker 上の ROS melodic から使う
 
-## 初期設定
+## 初期設定（初回のみ）
 ```bash
 # copy across udev rules
 $ wget https://raw.githubusercontent.com/kobuki-base/kobuki_ftdi/devel/60-kobuki.rules
@@ -8,8 +8,8 @@ $ sudo cp 60-kobuki.rules /etc/udev/rules.d
 $ sudo service udev reload
 $ sudo service udev restart
 ```
-
-## コンテナ起動
+## テスト
+### コンテナ起動
 ```bash
 $ cd （任意のディレクトリ）
 $ git clone git@github.com:sh-hay/kobuki-controller.git
@@ -21,7 +21,7 @@ $ docker run -it --rm \
   --net=host \
   kobuki_image
 ```
-## テスト
+### 実行
 ```bash
 $ roslaunch kobuki_node minimal.launch
 
@@ -43,5 +43,5 @@ $ docker run -it --rm \
 ```
 
 ## 参考
-https://github.com/gaunthan/Turtlebot2-On-Melodic
+https://github.com/gaunthan/Turtlebot2-On-Melodic  
 https://github.com/kobuki-base/kobuki_ftdi
